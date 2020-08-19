@@ -1,7 +1,11 @@
-<p>Heeeelo</p>
 <div *ngIf="brewCoffee" class="covfefe">
   <img src="https://media1.tenor.com/images/445208ab92a994be1cab515c21f24287/tenor.gif?itemid=8990434" />
 </div>
-<div *ngIf="!brewCoffee" class="covfefe">
-  <p>No coffe :(</p>
+
+<p>The edit button below is visible for knowledge workers:</p>
+<button *ngIf="edit === 'show-btn'">Edit</button>
+
+<div>
+  <p>{{bar}}</p>
+  <p>{{desc}}</p>
 </div>
